@@ -4,7 +4,7 @@ import request from "supertest";
 const app = express();
 app.get("/", (request, response) => {
   response.send(`Hello ${request.query.name}`);
-  console.info(request.query)
+  console.info(request.query)// {name: "Thariq"}
   console.info(request.originalUrl)// /?name=Thariq
 })
 

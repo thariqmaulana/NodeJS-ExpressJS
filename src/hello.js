@@ -18,6 +18,10 @@ app.get("/thariq", (request, response) => {
   response.send("<h1>Hello Thariq</h1>");
 })
 
+app.get("/products", (request, response) => {
+  response.send("<b>List of Products</b>");
+})
+
 app.listen(3000, () => {
   console.info("Server started on port 3000");
 })

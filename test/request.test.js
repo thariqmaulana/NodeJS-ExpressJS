@@ -7,7 +7,7 @@ app.get("/", (request, response) => {
   response.send("Hello World");
 })
 
-test("Hello World", async () => {
+test("Test Request", async () => {
   //membuat simulasi request. jadi tidak perlu menggunakan browser
   // inilah kegunaan supertest
   //request ke app.dengan method get
