@@ -12,3 +12,5 @@ test("Test Response Redirect", async () => {
   expect(responseFromServer.status).toBe(302);//default
   expect(responseFromServer.get("Location")).toBe("/to-next-page");
 })
+
+app.listen(3000);
