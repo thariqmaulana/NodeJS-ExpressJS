@@ -29,7 +29,7 @@ test("Test Request JSON", async () => {
     .send({
       name: "Thariq"
     });
-
+    console.info(response.body)//berarti otomatis di konversi menjadi obj lagi ketika diterima
   expect(response.body).toEqual({
     messageFromServer: "Hello Thariq"
   });
